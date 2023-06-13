@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="PercentageGrading.css">
+
+    <!-- JS FILE -->
+    <script defer src="PercentageGrading.js"></script>
+    <noscript>Please Enable JavaScript!</noscript>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Bungee+Inline&family=Caveat:wght@600&family=Paytone+One&display=swap" rel="stylesheet">
+
+    <title>Percentage Grading</title>
+</head>
+<body>
+
+    <div class="main-div">
+
+            <div class="sub-div">
+                <a href="Next.html" id="next-arrow">&#187</a>
+
+                <h1 class="heading">Percentage Grading</h1>
+                <div class="percentage">
+                    <label for="Total">Total Marks: </label>
+                    <input type="number" id="total" oninput="PercentageGrading()">
+
+                    <label for="Obtained">Obtained Marks: </label>
+                    <input type="number" id="obtained" oninput="PercentageGrading()">
+
+                    <br>
+
+                    <label for="Percentage">Percentage: </label>
+                    <input type="text" id="percentage" readonly>
+
+                    <label for="Grade">Grade: </label>
+                    <input type="text" id="grade" readonly>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+</html>

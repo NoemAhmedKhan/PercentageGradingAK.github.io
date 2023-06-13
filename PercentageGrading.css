@@ -1,0 +1,234 @@
+:root{
+    --purple: #9b59b6;
+    --green: #2ecc71;
+    --seagreen: #1abc9c;
+    --darkblue: #30336b;
+    --blue: #2e86de;
+    --lightblue: #34ace0;
+    --lightpurple: #686de0;
+    --red: #eb4d4b;
+    --white: #ecf0f1;
+    --white-2: #ffffff;
+    --gray: #aaa69d;
+    --gray-2: #d1ccc0;
+    --gray-3: #7f8fa6;
+    --gray-4: #718093;
+    --gray-5: #a4b0be;
+    --gray-6: #747d8c;
+    --lightred: #ff5252;
+    --black: #57606f;
+    --silver: #bdc3c7;
+}
+
+/* Fonts */
+/* font-family: 'Bungee Inline', cursive; */
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Alkatra', cursive; */
+/* font-family: 'Paytone One', sans-serif; */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 969px;
+    width: 100%;
+    background-color: var(--darkblue);
+}
+
+.sub-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 60px 0px;
+    margin: 0px;
+    background-color: var(--gray-6);
+}
+
+#next-arrow{
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    top: 4px;
+    right: 4px;
+    height: auto;
+    width: auto;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0px;
+    padding: 2px 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#next-arrow:hover{
+    border: 2px solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+    transition: all;
+    transition-duration: 0.28s;
+    transition-delay: 0.15ms;
+    transition-timing-function: ease;
+}
+
+.heading{
+    height: auto;
+    width: 80%;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 10px 0px;
+    padding: 10px;
+    font-family: 'Bungee Inline', cursive;
+    text-shadow: 2px 2px 0 var(--lightred), 2px -2px 0 var(--lightred), -2px 2px 0 var(--lightred), -2px -2px 0 var(--lightred), 2px 0px 0 var(--lightred), 0px 2px 0 var(--lightred), -2px 0px 0 var(--lightred), 0px -2px 0 var(--lightred);
+}
+
+.percentage{
+    height: auto;
+    width: 80%;
+    background-color: var(--black);
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+}
+
+.percentage label{
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 2px 4px;
+    margin: 20px 3%;
+    font-size: 30px;
+    font-family: 'Alkatra', cursive;
+    text-shadow: 2px 2px 0 var(--lightpurple), 2px -2px 0 var(--lightpurple), -2px 2px 0 var(--lightpurple), -2px -2px 0 var(--lightpurple), 2px 0px 0 var(--lightpurple), 0px 2px 0 var(--lightpurple), -2px 0px 0 var(--lightpurple), 0px -2px 0 var(--lightpurple);
+}
+
+.percentage input{
+    background-color: var(--white);
+    color: var(--black);
+    height: 35px;
+    width: 16%;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Paytone One', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.percentage .button{
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    padding: 2px 8px;
+    margin: 0px 6%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Alkatra', cursive;
+}
+
+.percentage .button:hover{
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+    transition: all;
+    transition-duration: 0.25s;
+    transition-delay: 0.2ms;
+    transition-timing-function: ease;
+}
+
+@media only screen and (max-width: 1430px) and (min-width: 950px){
+    .sub-div{
+        width: 90%;
+    }
+    .heading{
+        width: 90%;
+    }
+    .percentage{
+        width: 90%;
+    }
+    .percentage label{
+        margin: 20px 2%;
+    }
+    .percentage input{
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 949px) and (min-width: 645px){
+    .sub-div{
+        width: 90%;
+    }
+    .heading{
+        width: 90%;
+    }
+    .percentage{
+        width: 90%;
+    }
+    .percentage label{
+        margin: 20px 6%;
+    }
+    .percentage input{
+        margin: 0px 11% 10px 0px;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 644px) and (min-width: 428px){
+    .sub-div{
+        width: 95%;
+    }
+    .heading{
+        width: 95%;
+    }
+    .percentage{
+        padding: 10px 0px 30px 0px;
+        width: 95%;
+    }
+    .percentage label{
+        margin: 5px 16% 5px 2%;
+    }
+    .percentage input{
+        margin: 0px 68px 0px 2%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 427px) and (min-width: 280px){
+    .sub-div{
+        padding: 20px 0px;
+        width: 95%;
+    }
+    .heading{
+        margin: 12% 0px 10px 0px;
+        width: 90%;
+        font-size: 25px;
+    }
+    .percentage{
+        padding: 10px 0px 30px 0px;
+        width: 95%;
+    }
+    .percentage label{
+        margin: 5px 2% 5px 2%;
+    }
+    .percentage input{
+        margin: 0px 10px 0px 2%;
+        width: 75%;
+    }
+}
